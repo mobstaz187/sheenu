@@ -1,0 +1,570 @@
+* {
+  padding: 0;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#pop {
+  animation: pop .9s ease-in-out infinite;
+}
+#pop1 {
+  animation: pop .9s ease-in-out infinite;
+}
+
+@keyframes pop{
+  50%  {
+    transform: scale(1.009);
+  }
+}
+body{
+  overflow-x: hidden;
+
+}
+
+img {
+  
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #9a9e6cc4;
+}
+
+
+.showcase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  background-image: url("../img/SheebaShiba.jpg");
+  background-size: cover;
+  color: white;
+  width: 100%;
+  height: Auto;
+  height: 100vh;
+  background-size:100% 100%;
+}
+
+.sectionbg {
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-image: url("../img/SheebaShiba.jpg");
+  background-size: 87% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  }
+  section:nth-of-type(2n) {
+    background-color: #FE4B74;
+  }
+
+.showcase .king {
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-bottom: 50px;
+  margin-left: 50px;
+}
+
+.showcase .king hr {
+  height: 50%;
+  -webkit-transform: translate(12px, 50%);
+          transform: translate(12px, 50%);
+}
+
+.showcase ul {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  max-width: 100px;
+  height: auto;
+  z-index: 3;
+}
+
+.showcase ul li {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.showcase ul li:hover {
+  border-radius: 50%;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.durian {
+  position: inline;
+  display: inline-block;
+  width: 100vw;
+  height: auto;
+  z-index: 3;
+}
+.notdurian {
+  position: inline;
+  display: inline-block;
+  width: 100vw;
+  height: auto;
+  z-index: 3;
+}
+.dog {
+  position: inline;
+  display: inline-block;
+  width: 100vw;
+  height: auto;
+  z-index: 3;
+}
+.dog div {
+  position: absolute;
+  top: 65%;
+  right: 31.7%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+
+.durian div {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.coinicon {
+  position: relative;
+  display: inline-block;
+  width: 100vw;
+  height: auto;
+  z-index: 3;
+}
+
+.coinicon div {
+  position: absolute;
+  top: 55%;
+  right: 70%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.coinicon  div:first-child {
+  z-index: 2;
+}
+.durian div:first-child {
+  z-index: 2;
+}
+
+section {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.anatomy {
+  /*position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 50px 20px 0;
+  color: #000000;
+  overflow: hidden;*/
+ 
+    width: 100%;
+    padding: 0 7%;
+    display: table;
+    margin: 0;
+    max-width: 100%;
+
+    background-image: url('../img/BGBlank.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+       /*added here*/
+}
+
+.anatomy hr {
+  background-color: #adb36e;
+  height: 5px;
+}
+
+.anatomy p, .anatomy ul {
+  margin-top: 10px;
+  font-size: .8rem;
+}
+
+.anatomy .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
+}
+
+.anatomy .parts {
+  position: relative;
+  background: url(../img/coinlogo.png)  center/cover;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  width: 500px;
+  height: calc(100vh - 30vh);
+}
+
+.anatomy .parts div {
+  position: absolute;
+  font-weight: 700;
+  color: #8e86cc;
+}
+
+.anatomy .parts i {
+  color: #cacf96c4;
+  -webkit-animation: dot 1.5s 6 linear;
+          animation: dot 1.5s 6 linear;
+}
+
+@-webkit-keyframes dot {
+  100% {
+    color: #4f3961;
+  }
+}
+
+@keyframes dot {
+  100% {
+    color: #4f3961;
+  }
+}
+
+.anatomy .stalk {
+  top: 80px;
+  left: 15%;
+}
+
+.anatomy .shell {
+  bottom: 30%;
+  left: 20%;
+}
+
+.anatomy .meat {
+  top: 250px;
+  left: 20%;
+}
+
+.anatomy .partition {
+  bottom: 20%;
+  right: 50px;
+}
+
+.anatomy .nutrition-facts {
+
+          transform: translateY(-10%);
+}
+
+.anatomy .nutrition-facts li {
+  line-height: 2;
+}
+
+.durian-variety {
+  width: 100%;
+    padding: 0 7%;
+    display: table;
+    margin: 0;
+    max-width: 100%;
+
+    background-image: url('../img/BGBlank.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.durian-variety .sort {
+  padding: 50px;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.durian-variety .durian-image, .durian-variety .desc {
+  width: 50%;
+  margin: 20px;
+}
+
+.durian-variety .durian-image {
+  padding: 70px;
+  background: #adb36e;
+}
+
+.durian-variety .desc {
+  position: relative;
+  padding: 20px;
+}
+
+.durian-variety .desc p {
+  z-index: 10;
+}
+
+.durian-variety .name-style {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  font-weight: 900;
+  font-size: 2.8rem;
+  color: #e7e9d5;
+  z-index: -1;
+}
+
+
+.flip-container {
+  -webkit-perspective: 1000;
+  background: transparent;
+  margin: 100px auto;
+}
+/* flip the picture when hover */
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+  -webkit-transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back,
+img {
+  width: 820px;
+  height: 450px;
+}
+/* flip speed */
+
+.flipper {
+  -webkit-transition: .5s;
+  -webkit-transform-style: preserve-3d;
+  position: relative;
+}
+/* hide back  during flip */
+
+.front,
+.back {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* front placed above back */
+
+.front {
+  z-index: 2;
+}
+/* back, initially hidden */
+
+.back {
+  -webkit-transform: rotateY(180deg);
+}
+/*# sourceMappingURL=style.css.map */
+
+
+/* entire container, keeps perspective */
+
+.notflip-container {
+  -webkit-perspective: 1000;
+  background: transparent;
+  margin: 100px auto;
+}
+/* notflip the picture when hover */
+
+.notflip-container:hover .notflipper,
+.notflip-container.hover .notflipper {
+  transform: rotateY(180deg);
+}
+
+.notflip-container,
+.notfront,
+.notback,img[src^="img/CoinLogo.PNG"] {
+  width: 35vh;
+  height: 35vh;
+  margin-bottom:-23%;
+  z-index: 10;
+}
+
+img[src^="img/gold.PNG"],img[src^="img/1B.png"],img[src^="img/LP.png"],img[src^="img/TAX.png"]{
+  width: 35vh;
+  height: 35vh;
+  margin-bottom:-23%;
+  z-index: 10;
+}
+/* notflip speed */
+
+.notflipper {
+  -webkit-transition: .3s;
+  -webkit-transform-style: preserve-3d;
+  position: relative;
+}
+/* hide back  during notflip */
+
+.notfront,
+.notback {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* front placed above back */
+
+.notfront {
+  z-index: 2;
+}
+/* back, initially hidden */
+
+.notback {
+  -webkit-transform: rotateY(180deg);
+}
+
+.meme1 {
+  padding: 0px;
+  width: 23%;
+  height:auto;
+  border-radius: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform .2s;
+}
+.meme1:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+.meme2 {
+  display: flex;
+  padding: 5px;
+  width: 23%;
+  height:auto;
+  border-radius: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.titlememes {
+  display: block;margin: auto;
+  padding: 50px;
+  width: 50%;
+  height:auto;
+  border-radius: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.meme4 {
+  display: flex;
+  padding: 5px;
+  width: 23%;
+  height:auto;
+  border-radius: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.column {
+  flex: 33.33%;
+  padding: 0px;
+}
+.row {
+  display: flex;
+}
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  border-radius: 1rem;
+}
+.secondfooter {
+  position: inherit;
+  left: 0;
+  bottom:-100vh;
+  width: 100%;
+  height:10%;
+  background-color:#ED7674;
+  color: white;
+  text-align: center;
+  border-radius: 1.5rem;
+}
+
+.footerimg {
+  padding: 0px;
+  width: 100%;
+  height:auto;
+  border-radius: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform .2s;
+}
+.row_sec3 {
+  display: flex;
+  margin-top: 15%;
+}
+#cleck:hover {background-color: #3e8e41}
+#cleck:active {
+  background-color: #3e8e41;
+  transform: translateY(4px);
+}
+
+.intro{
+  position: fixed;
+  z-index: 11;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /*background-color: #161616;*/
+  background-color: #ffffff;*/
+  background-repeat:no-repeat;
+  background-size:cover;
+  transition: 1s;
+}
+.logo-header{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color:#ffffff;
+}
+.logo{
+  position: relative;
+  display: inline-block;
+  bottom: -20px;
+  opacity: 0;
+}
+.logo.active{
+  bottom: 0;
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+}
+
+.logo.fade{
+  bottom: 150px;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+}
