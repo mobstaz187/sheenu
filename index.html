@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DynaPuff">
+    <title>SheebaInu</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+</head>
+<body>
+    <div class="intro">
+        <h1 class="logo-header">
+            <img src="./img/Title.png" class="logo"/>
+            <!--<font style="color: #ffffff; font-size: 100px; font-family: DynaPuff;"> <span class="logo">SHEEBA</span><span class="logo"><font style="font-size: 25px;">ㅤ</font></span><span class="logo">INU</span></font> 
+            -->
+        </h1>
+    </div>
+    <section class="sectionbg">
+        <audio id="my-audio" src="sheeba.mp3" loop></audio>
+        <div class="king">
+            <hr>
+            <p></p> 
+        </div>
+            <div>
+                    <div class="durian">
+                        <div class="coinicon-i">
+                            <img  class="durianImage" src="img/TitleMusic.png" id="pop" onmouseover="this.src='./img/SheebaGoldmusic.png'" onmouseout="this.src='./img/TitleMusic.png'" alt="Sheebapicture">
+                        </div>
+                    </div>
+             </div>
+        <!--<div class="dog">
+            <div class="dog-i">
+                <div class="durianImage">
+                    <style>.dogimage{
+                        position:inline;
+                        height: 200px;
+                        width: 250px;
+                        background-size: 200%;
+                    }</style>
+                <img class="dogimage" src="img/BuyMe.png" alt="Durian picture" >
+                </div>
+            </div>
+        </div>-->
+        <div class="row">
+            <form action="https://t.me/thesheebainu" style="width:5%;margin-left: -5%;border-radius: 1rem;"><input type="image"  src="img/TG.webp" class="meme1" style="width:100%;"/></form>
+            <form action="https://x.com/InuSheeba" style="width:5%;margin-left: -85%;border-radius: 1rem;"><input type="image"  src="img/X.avif" class="meme1" style="width:100%;"/></form>
+            <form action="https://pump.fun/" style="width:5%;margin-left: -85%;background-color: #ffffff;border-radius: 1rem;"><input type="image"  src="img/PF.png" class="meme1" style="width:100%;"/></form>
+        </div>
+    </section>
+    <style>
+        section{
+            background-image: url("../img/BGBlank.JPG");
+        }
+        .img_two {
+            height: 20%;
+            width: 20%;
+        }
+        .img_3 {
+            padding-top: 10vh;
+            padding-left: 20vh;
+            height: 30%;
+            width: 30%;
+        }
+        .img_girlShib {
+            margin-top: 25px;
+            height: 10%;
+            width: 10%;
+        }
+        .divloc {
+            padding-right:0%;
+            margin-top: 15%;
+            z-index: 12;
+        }
+        #Library {
+        background-image: url('img/BuyMe.png');
+        height: 70px;
+        width: 120px;
+        }
+
+        #Library:hover {
+        background-image: url('img/BuyMe.png');
+        }
+        #wrapper {
+        margin-left:auto;
+        margin-right:auto;
+        }       
+        .memespopup {
+                position: fixed;
+                z-index: 5;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(
+                    0,
+                    0,
+                    0,
+                    0.4
+                );
+                display: none;
+            }
+            .memespopup-content {
+                background-color: white;
+                margin: 10% auto;
+                padding: 20px;
+                padding-top:13vh;
+                border: 1px solid #888888;
+                width: 80%;
+                font-weight: bolder;
+                border-radius: 1rem;
+            }
+            .memespopup-content button {
+                display: block;
+                margin: 0 auto;
+            }
+            .show {
+                display: block;
+            }
+    </style>
+
+    <section class="anatomy" >
+        
+        <h1 class="title"></h1>
+        <div>
+            <Input type="image" style="float: left;"  id="show" class="img_girlShib" src="img/GirlShibaTP.png"/>
+        </div>
+        <div>
+           <input type="image" style="float: right;"  id="PopUpTokenomics" class="img_two" src="img/Tokenomics.PNG" onmouseover="this.src='img/TokenomicsGold.PNG';" onmouseout="this.src='img/Tokenomics.PNG';"/>
+        </div>
+        <div>
+            <input type="image" style="float: right;"  id="PopUpMemes" class="img_two" src="img/Memes.PNG" onmouseover="this.src='img/MemeGold.PNG';" onmouseout="this.src='img/Memes.PNG';"/>
+        </div>
+        <div>
+            <input type="image" style="float: right;"  id="PopUpabout" class="img_two" src="img/AboutSheeba.PNG" onmouseover="this.src='img/AboutSheebaGold.PNG';" onmouseout="this.src='img/AboutSheeba.PNG';"/>
+        </div>
+
+
+
+        <div id="myPopup" class="memespopup">
+            <img src="img/Bone.webp" style="float: left;" class="img_3">
+            <div class="memespopup-content">
+                
+                <div class="row">
+                    <div class="column"><image id="pop1" src="img/STUDENT.gif" class="meme1" style="width:100%"></image></div>
+                    <div class="column"><image id="pop1" src="img/MONAGIF.gif" class="meme1" style="width:100%"></image></div>
+                    <div class="column"><image id="pop1" src="img/Jealous.gif" class="meme1" style="width:100%"></image></div>
+                    <div class="column"><image id="pop1" src="img/SURF.gif" class="meme1" style="width:100%"></image></div>
+                </div>
+                <!--<h1 style="color: green">
+                    
+                </h1>-->
+                <image src="img/Sheemes.jpg" class="titlememes"></image>
+                <!--<p>This is a popup box!</p>-->
+                <button id="closePopup">
+
+                </button>
+                <footer class="footer">
+                    <img src="./img/footmeme.png" class="footerimg">
+                </footer>
+            </div>
+        </div>
+
+        <div id="mynotPopup" class="memespopup">
+            <img src="img/Title.png" style="float: left;margin-top:1.5%;" class="img_3">
+            <div class="memespopup-content">
+                
+                <div class="row">
+                    <div class="column"><image id="pop1" src="img/Jealous.gif" class="meme1" style="width: 100%;margin-bottom:5%;margin-left: -55%;"></image></div>
+                    
+                    <div class="column"><p style="margin-left:-50%;margin-right:1%;"><font style="color: #ED7674; font-size: 25px; font-family: DynaPuff;"><font size="+10" >The $SHEENU</font><br>Presenting Sheeba Inu, Shiba Inu's long-lost lover. A love story centered around memes, and a part of history ready to unfold. Our community is dedicated to developing a positive and enjoyable community with the goal of creating major partnerships across the space.</font></p>
+                    </div>
+                    </div>
+                <!--<h1 style="color: green">
+                    
+                </h1>
+                <image src="img/Sheemes.jpg" class="titlememes"></image>-->
+                <!--<p>This is a popup box!</p>-->
+                <button id="closeaboutPopup">
+
+                </button>
+                <footer class="footer">
+                    <img src="./img/footmeme.png" class="footerimg">
+                </footer>
+            </div>
+        </div>
+
+        <div id="myTokenomicsPopup" class="memespopup">
+            <img src="img/Title.png" style="float: left;margin-top:-1.5%;" class="img_3">
+            <div class="memespopup-content">
+                
+                <div class="row" style="padding-bottom: 15%;margin-top: 0%;">
+
+                    <div class="column">
+                        <div class="notflip-container" >
+                            <div class="notflipper" >
+                                    <div class="notfront">
+                                        <img  id="pop1" src="img/gold.PNG"/>  
+                                    </div>
+                            
+                                    <div class="notback">   
+                                        <img   id="pop1" src="img/1B.png"/>       
+                                    </div>
+                            </div>
+                        </div>  
+                    </div>
+
+                    <div class="column">
+                        <div class="notflip-container" >
+                            <div class="notflipper" >
+                                    <div class="notfront">
+                                        <img  id="pop1" src="img/gold.PNG"/>  
+                                    </div>
+                            
+                                    <div class="notback">   
+                                        <img   id="pop1" src="img/LP.png"/>       
+                                    </div>
+                            </div>
+                        </div>  
+                    </div>
+
+                    <div class="column">
+                        <div class="notflip-container" >
+                            <div class="notflipper" >
+                                    <div class="notfront">
+                                        <img  id="pop1" src="img/gold.PNG"/>  
+                                    </div>
+                            
+                                    <div class="notback">   
+                                        <img   id="pop1" src="img/TAX.png"/>       
+                                    </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <!--<h1 style="color: green">
+                    
+                </h1>
+                <image src="img/Sheemes.jpg" class="titlememes"></image>-->
+                <!--<p>This is a popup box!</p>-->
+                <button id="closeTokenomicsPopup">
+
+                </button>
+                <footer class="footer">
+                    <img src="./img/footmeme.png" class="footerimg">
+                </footer>
+            </div>
+        </div>
+
+
+        <div class="divloc">
+            <div class="notflip-container" >
+                <div class="notflipper" >
+                        <div class="notfront">
+                            <img  id="pop1" src="img/gold.PNG"/>  
+                        </div>
+                
+                        <div class="notback">   
+                            <img   id="pop1" src="img/CoinLogo.PNG"/>       
+                        </div>
+                </div>
+            </div>  
+        <div >
+                <form action="https://pump.fun/"><input id="pop1" type="image" style="margin-left:40%;margin-top:20%;bottom: 10%;" class="img_two" src="img/BuyMe.png" onmouseover="this.src='img/BuyMeGold.PNG';" onmouseout="this.src='img/BuyMe.png';"width="10" height="10"/></form>
+             </div>
+        </div>
+        <script>
+            PopUpMemes.addEventListener(
+                "click",
+                function () {
+                    myPopup.classList.add("show");
+                }
+            );
+            closePopup.addEventListener(
+                "click",
+                function () {
+                    myPopup.classList.remove(
+                        "show"
+                    );
+                }
+            );
+            window.addEventListener(
+                "click",
+                function (event) {
+                    if (event.target == myPopup) {
+                        myPopup.classList.remove(
+                            "show"
+                        );
+                    }
+                }
+            );
+
+            PopUpabout.addEventListener(
+                "click",
+                function () {
+                    mynotPopup.classList.add("show");
+                }
+            );
+            closeTokenomicsPopup.addEventListener(
+                "click",
+                function () {
+                    mynotPopup.classList.remove(
+                        "show"
+                    );
+                }
+            );
+            window.addEventListener(
+                "click",
+                function (event) {
+                    if (event.target == mynotPopup) {
+                        mynotPopup.classList.remove(
+                            "show"
+                        );
+                    }
+                }
+            );
+
+            PopUpTokenomics.addEventListener(
+                "click",
+                function () {
+                    myTokenomicsPopup.classList.add("show");
+                }
+            );
+            closeaboutPopup.addEventListener(
+                "click",
+                function () {
+                    myTokenomicsPopup.classList.remove(
+                        "show"
+                    );
+                }
+            );
+            window.addEventListener(
+                "click",
+                function (event) {  
+                    if (event.target == myTokenomicsPopup) {
+                        myTokenomicsPopup.classList.remove(
+                            "show"
+                        );
+                    }
+                }
+            );
+
+            function copyText() {
+
+            /* Copy text into clipboard */
+            navigator.clipboard.writeText
+                ("");
+            }
+
+            var isAudioPlayed = false;
+            function playAudio() {
+
+                isAudioPlayed = true;
+                const myAudio = document.getElementById("my-audio");
+                myAudio.play();
+            }
+
+
+            document.body.onclick = ()=>{
+                if(isAudioPlayed) return ;
+                playAudio();
+            }
+        </script>
+
+            
+            <!--
+            <div class="h-benefits">
+                <h3>Health Benefits</h3>
+                <hr>
+                <p>Studies suggest that durian fruit offers the following health benefits (2Trusted Source, 3Trusted Source):
+                    Reduces cancer risk. Its antioxidants may neutralize cancer-promoting free radicals. In one test-tube study, durian extract prevented a strain of breast cancer cells from spreading.
+                    Prevents heart disease. Fights infection. The rind contains compounds that have antibacterial and anti-yeast properties. Durian has a lower glycemic index (GI) than many other tropical fruits, meaning it may spike blood sugar levels less.</p>
+            </div> -->
+               
+        </div>
+        <footer class="secondfooter">
+            <p><font style="color: #ffffff; font-size: 20px; font-family: DynaPuff;">Ticker: $SHEENU | CA: </font></p>
+            <input type="image" id="cleck" src="./img/COPYCA.png" class="footerimg" onclick="copyText()">
+            
+        </footer>
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
